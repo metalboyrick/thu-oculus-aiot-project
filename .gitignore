@@ -73,3 +73,8 @@ crashlytics-build.properties
 
 # NUIX
  /[Aa]ssets/NUIX-Studio-APP/
+
+# VS Code
+.vscode/
+.collabignore
+.vsconfig

@@ -16,8 +16,8 @@ Unity version **2020.3.19f1**
 
 ## Developing
 
-1. `git pull` to get the latest version of `Living_Room.unity`
-2. Start developing, in the process you will change the file `Living_Room.unity` under the directory `/Assets/NUIX-Studio-APP/Environments/Environments/`
+1. `git pull` to get the latest version of `Living_Room.unity` and `Living_Room.unity.meta`
+2. Start developing, in the process you will change the file `Living_Room.unity` (and `Living_Room.unity.meta`) under the directory `/Assets/NUIX-Studio-APP/Environments/Environments/`
 3. Replace the file `Living_Room.unity` at the root directory when you are done!
 4. Commit your files and git push, notify in WeChat group
 

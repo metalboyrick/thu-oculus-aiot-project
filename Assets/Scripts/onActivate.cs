@@ -15,13 +15,13 @@ public class onActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pressure)
+        if (pressure)
         {
-            GameObject.Find("WeightDetector").GetComponent<Renderer>().material.color = new Color(100,0,0);
+            GameObject.Find("WeightDetector").GetComponent<Renderer>().material.color = new Color(100, 0, 0);
         }
-        else 
+        else
         {
-            GameObject.Find("WeightDetector").GetComponent<Renderer>().material.color = new Color(0,0,100);
+            GameObject.Find("WeightDetector").GetComponent<Renderer>().material.color = new Color(0, 0, 100);
         }
     }
 
@@ -29,7 +29,7 @@ public class onActivate : MonoBehaviour
     {
         pressure = true;
     }
-    
+
     public void changeBlue()
     {
         pressure = false;

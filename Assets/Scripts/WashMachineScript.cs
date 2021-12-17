@@ -39,4 +39,14 @@ public class WashMachineScript : MonoBehaviour
         }
         isOpen = false;
     }
+
+    public void StartMachine()
+    {
+       
+    }
+
+    public void StopMachine()
+    {
+
+    }
 }

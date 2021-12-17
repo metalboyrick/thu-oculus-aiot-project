@@ -21,6 +21,7 @@ public class WashMachineScript : MonoBehaviour
 
     public void OpenMachine()
     {
+        // opens the machine
         if (!isOpen)
         {
             Quaternion target = Quaternion.Euler(0, 0, -90);

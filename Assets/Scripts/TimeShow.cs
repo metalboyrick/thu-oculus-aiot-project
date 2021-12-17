@@ -1,4 +1,5 @@
 using Microsoft.MixedReality.Toolkit;
+using Microsoft.MixedReality.Toolkit.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +11,9 @@ public class TimeShow : MonoBehaviour
     private TextMeshPro textMesh = null;
     float i = 0;
     int timeValue = -1;
+
+    [SerializeField] private GameObject UIButtonToggleIconOn_Time;
+    [SerializeField] private GameObject UIButtonToggleIconOff_Time;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,7 @@ public class TimeShow : MonoBehaviour
             if(timeValue == 0)
             {
                 GameObject.Find("PressableButtonHoloLens2ToggleSwitch_32x96_Time").GetComponent<PhysicalPressEventRouter>().OnHandPressTriggered();
+                timeValue = -1;
             }
             if (i >= 1) 
             {
@@ -46,6 +51,31 @@ public class TimeShow : MonoBehaviour
 
             } 
             i += Time.deltaTime;
+        }
+    }
+
+    public void StopMachine()
+    {
+        GameObject.Find("PressableButtonHoloLens2ToggleSwitch_32x96_Time").GetComponent<PhysicalPressEventRouter>().OnHandPressTriggered();
+        timeValue = -1;
+        textMesh.text = "00:00";
+    }
+
+    public void StartMachine()
+    {
+        if (UIButtonToggleIconOff_Time.activeSelf == true && UIButtonToggleIconOn_Time.activeSelf == false)
+        {
+            UIButtonToggleIconOff_Time.SetActive(false);
+            UIButtonToggleIconOn_Time.SetActive(true);
+        }
+    }
+
+    public void PauseMachine()
+    {
+        if (UIButtonToggleIconOff_Time.activeSelf == false && UIButtonToggleIconOn_Time.activeSelf == true)
+        {
+            UIButtonToggleIconOff_Time.SetActive(true);
+            UIButtonToggleIconOn_Time.SetActive(false);
         }
     }
 

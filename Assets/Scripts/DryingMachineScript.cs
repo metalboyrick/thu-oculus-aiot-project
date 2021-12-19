@@ -6,6 +6,8 @@ using UnityEngine;
 public class DryingMachineScript : MonoBehaviour
 {
     bool isOpen = false;
+    bool isRunning = false;
+    bool isSelected = false;
     GameObject washingHatch;
     
     // Start is called before the first frame update
@@ -17,26 +19,40 @@ public class DryingMachineScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isOpen)
-        {
-            Quaternion target = Quaternion.Euler(0, 0, -90);
-            washingHatch.transform.localRotation = target;
-        }
-        else 
-        {
-            Quaternion target = Quaternion.Euler(0, 0, 0);
-            washingHatch.transform.localRotation = target;
-        }
     }
 
     public void OpenMachine()
     {
+        // opens the machine
+        if (!isOpen && !isRunning && isSelected)
+        {
+            Quaternion target = Quaternion.Euler(0, 0, -90);
+            washingHatch.transform.localRotation = target;
+        }
         isOpen = true;
-        Debug.Log("Voice command detected");
     }
     
     public void CloseMachine()
     {
+        if (isOpen && !isRunning && isSelected)
+        {
+            Quaternion target = Quaternion.Euler(0, 0, 0);
+            washingHatch.transform.localRotation = target;
+        }
         isOpen = false;
+    }
+
+    public void StartMachine()
+    {
+        isRunning = true;
+    }
+
+    public void StopMachine()
+    {
+        isRunning = false;
+    }   
+    public void toggleSelected(bool newState)
+    {
+        isSelected = newState;
     }
 }

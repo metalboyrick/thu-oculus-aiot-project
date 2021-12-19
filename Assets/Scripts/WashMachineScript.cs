@@ -6,6 +6,8 @@ using UnityEngine;
 public class WashMachineScript : MonoBehaviour
 {
     bool isOpen = false;
+    bool isRunning = false;
+    bool isSelected = true;
     GameObject washingHatch;
     
     // Start is called before the first frame update
@@ -22,7 +24,7 @@ public class WashMachineScript : MonoBehaviour
     public void OpenMachine()
     {
         // opens the machine
-        if (!isOpen)
+        if (!isOpen && !isRunning && isSelected)
         {
             Quaternion target = Quaternion.Euler(0, 0, -90);
             washingHatch.transform.localRotation = target;
@@ -32,7 +34,7 @@ public class WashMachineScript : MonoBehaviour
     
     public void CloseMachine()
     {
-        if (isOpen)
+        if (isOpen && !isRunning && isSelected)
         {
             Quaternion target = Quaternion.Euler(0, 0, 0);
             washingHatch.transform.localRotation = target;
@@ -42,11 +44,15 @@ public class WashMachineScript : MonoBehaviour
 
     public void StartMachine()
     {
-       
+        isRunning = true;
     }
 
     public void StopMachine()
     {
-
+        isRunning = false;
+    }   
+    public void toggleSelected(bool newState)
+    {
+        isSelected = newState;
     }
 }

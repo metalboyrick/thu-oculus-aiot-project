@@ -1710,7 +1710,7 @@ GameObject:
   - component: {fileID: 176471349}
   m_Layer: 0
   m_Name: HandMenu_Slider_Temp
-  m_TagString: Untagged
+  m_TagString: TempSlider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3359,6 +3359,79 @@ MonoBehaviour:
   endPoint:
     position: {x: 0, y: 0.056, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!1 &396703595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 396703596}
+  - component: {fileID: 396703597}
+  m_Layer: 0
+  m_Name: ExampleWordAction 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &396703596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396703595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396703597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396703595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Wash
+  - wash
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 772631205352544962}
+        m_TargetAssemblyTypeName: DryingMachineScript, Assembly-CSharp
+        m_MethodName: toggleSelected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
+        m_MethodName: toggleSelected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &418301913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6526,6 +6599,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 409184, guid: 860fec1a0e7064032b9a58b2ca9fa31b, type: 3}
   m_PrefabInstance: {fileID: 1010810186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1022516822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022516823}
+  - component: {fileID: 1022516824}
+  m_Layer: 0
+  m_Name: ExampleWordAction 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1022516823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022516822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022516824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022516822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Dry
+  - dry
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 772631205352544962}
+        m_TargetAssemblyTypeName: DryingMachineScript, Assembly-CSharp
+        m_MethodName: toggleSelected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
+        m_MethodName: toggleSelected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1069835619
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,11 +7744,157 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53212551a89648a9baea70161fa5cc8, type: 3}
+--- !u!1 &1246581712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246581713}
+  - component: {fileID: 1246581714}
+  m_Layer: 0
+  m_Name: ExampleWordAction 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246581713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246581712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246581714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246581712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Jacket
+  - jacket
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8751396893859901236}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnVoiceChangeMode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jacket
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1247584500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 457246, guid: ae083d3813dfa4696a8520124331b445, type: 3}
   m_PrefabInstance: {fileID: 470600808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1258438074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258438075}
+  - component: {fileID: 1258438076}
+  m_Layer: 0
+  m_Name: ExampleWordAction 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258438075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258438074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1258438076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258438074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Mode
+  - mode
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8751396893859901236}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: enableVoiceMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7972511529878557634}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: enableVoiceMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2296800503669100986}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: enableVoiceMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1276819787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7885,6 +8177,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302264240}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1332035192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332035194}
+  - component: {fileID: 1332035193}
+  m_Layer: 0
+  m_Name: ExampleWordAction 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332035193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332035192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Shoes
+  - shoes
+  - Shoe
+  - shoe
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2296800503669100986}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnVoiceChangeMode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Shoes
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2071384327}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PinchSlider,
+          Microsoft.MixedReality.Toolkit.SDK
+        m_MethodName: set_SliderValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1332035194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332035192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348531442
 GameObject:
   m_ObjectHideFlags: 0
@@ -8986,6 +9354,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 409184, guid: 860fec1a0e7064032b9a58b2ca9fa31b, type: 3}
   m_PrefabInstance: {fileID: 1473513267}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1494067022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494067023}
+  - component: {fileID: 1494067024}
+  m_Layer: 0
+  m_Name: ExampleWordAction 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494067023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494067022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8025788468242719607}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494067024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494067022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49cc43b03ec4460a56ce565a86f6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - Regular
+  - regular
+  wordRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7972511529878557634}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnVoiceChangeMode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Regular
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1526774187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11108,6 +11537,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
+        m_MethodName: StopMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1875512289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12305,7 +12746,7 @@ GameObject:
   - component: {fileID: 2071384328}
   m_Layer: 0
   m_Name: HandMenu_Slider_Time
-  m_TagString: Untagged
+  m_TagString: TimeSlider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12361,7 +12802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thumbRoot: {fileID: 1593175755}
-  sliderValue: 0.4
+  sliderValue: 0.1
   trackVisuals: {fileID: 0}
   tickMarks: {fileID: 0}
   thumbVisuals: {fileID: 0}
@@ -15090,6 +15531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4387550728646650066}
+  - component: {fileID: 772631205352544962}
   m_Layer: 0
   m_Name: DryMachine
   m_TagString: Untagged
@@ -15097,6 +15539,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &772631205352544962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772631205352544961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0669e41f67d32f4db982daecda3e3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &815656511570943785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18887,6 +19341,12 @@ MonoBehaviour:
   - {fileID: 7450274652240893017}
   - {fileID: 7792321792224111467}
   - {fileID: 1852193380}
+  - {fileID: 1258438076}
+  - {fileID: 1246581714}
+  - {fileID: 1494067024}
+  - {fileID: 1332035193}
+  - {fileID: 1022516824}
+  - {fileID: 396703597}
 --- !u!23 &1951121115188352216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19701,6 +20161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!4 &2296800504036604610
 Transform:
   m_ObjectHideFlags: 0
@@ -20210,6 +20672,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 772631205352544962}
+        m_TargetAssemblyTypeName: DryingMachineScript, Assembly-CSharp
+        m_MethodName: CloseMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2451057224342610496
 GameObject:
   m_ObjectHideFlags: 0
@@ -24686,7 +25160,7 @@ GameObject:
   - component: {fileID: 5979232784158432083}
   - component: {fileID: 3411249261663569676}
   m_Layer: 0
-  m_Name: Hatch.001
+  m_Name: DryingHatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29006,6 +29480,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
+        m_MethodName: StartMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7797239718082736056
 GameObject:
   m_ObjectHideFlags: 0
@@ -29981,6 +30467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!65 &7972511529878557661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33893,6 +34381,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 772631205352544962}
+        m_TargetAssemblyTypeName: DryingMachineScript, Assembly-CSharp
+        m_MethodName: OpenMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8025788468114999954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34216,6 +34716,12 @@ Transform:
   - {fileID: 3794719273775529242}
   - {fileID: 5783884980290442930}
   - {fileID: 1852193379}
+  - {fileID: 1258438075}
+  - {fileID: 1246581713}
+  - {fileID: 1494067023}
+  - {fileID: 1332035194}
+  - {fileID: 1022516823}
+  - {fileID: 396703596}
   m_Father: {fileID: 8025788467325069401}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36711,6 +37217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!23 &8751396894295892141
 MeshRenderer:
   m_ObjectHideFlags: 0

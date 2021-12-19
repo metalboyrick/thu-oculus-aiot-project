@@ -25,13 +25,13 @@ Unity version **2020.3.19f1**
 
 ## Voice Commands
 
-| Command        | Feature                            |
-| -------------- | ---------------------------------- |
-| "Open"         | Open the washing machine           |
-| "Close"        | Close the washing machine          |
-| "Start"        | Start the machine                  |
-| "Stop"         | Stop the machine                   |
-| "Mode Regular" | Set the parameters to regular mode |
-| "Mode Jacket"  | Set the parameters to jacket mode  |
-| "Mode Shoes"   | Set the parameters to shoe mode    |
+| Command            | Feature                            |
+| ------------------ | ---------------------------------- |
+| "(Wash/Dry) Open"  | Open the washing/drying machine    |
+| "(Wash/Dry) Close" | Close the washing/drying machine   |
+| "Start"            | Start the machine                  |
+| "Stop"             | Stop the machine                   |
+| "Mode Regular"     | Set the parameters to regular mode |
+| "Mode Jacket"      | Set the parameters to jacket mode  |
+| "Mode Shoes"       | Set the parameters to shoe mode    |
 

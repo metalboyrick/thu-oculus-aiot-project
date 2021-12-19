@@ -25,7 +25,7 @@ public class TimeShow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("UIButtonToggleIconOff_Time") == null)
+        if (GameObject.Find("UIButtonToggleIconOff_Time") == null)
         {
             if (timeValue == -1)
             {
@@ -33,14 +33,15 @@ public class TimeShow : MonoBehaviour
                 textMesh.text = text;
                 timeValue = int.Parse(text.Split(':')[0]) * 60 + int.Parse(text.Split(':')[1]);
             }
-            if(timeValue == 0)
+            if (timeValue == 0)
             {
                 UIButtonToggleIconOff_Time.SetActive(true);
                 UIButtonToggleIconOn_Time.SetActive(false);
                 timeValue = -1;
+                GameObject.Find("WashingMachineWeightSensor").GetComponent<WashingMachineWeightScalerWidget>().moveClothes();
                 textMesh.text = "00:00";
             }
-            if (i >= 1) 
+            if (i >= 1)
             {
                 timeValue -= 1;
                 int minute = timeValue / 60;
@@ -51,7 +52,7 @@ public class TimeShow : MonoBehaviour
                     textMesh.text = $"{minute}:{second}";
                 i = 0;
 
-            } 
+            }
             i += Time.deltaTime;
         }
     }
@@ -84,7 +85,7 @@ public class TimeShow : MonoBehaviour
 
     public void SetTime(string timeParam)
     {
-         textMesh.text = timeParam;
+        textMesh.text = timeParam;
 
     }
 

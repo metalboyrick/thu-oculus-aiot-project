@@ -7,7 +7,7 @@ public class WashingMachineWeightScalerWidget : Sensor
     [SerializeField] float _requiredWeight = 0.0f;
     private ArrayList _colliders = new ArrayList(); // A list of object currently colliding with the scaler
     public float _totalWeight;
-
+    public GameObject dryer;
     public float CurrentWeight
     {
         get
@@ -53,5 +53,17 @@ public class WashingMachineWeightScalerWidget : Sensor
     void OnCollisionExit(Collision col)
     {
         _colliders.Remove(col.gameObject);
+    }
+
+    Vector3 getRelativeTransform(GameObject dryer){
+        return dryer.transform.position - this.transform.position;
+    }
+
+    public void moveClothes(){
+        for (int i = 0; i < _colliders.Count; i++)
+        {
+            GameObject clothes = (_colliders[i] as GameObject);
+            clothes.transform.position = clothes.transform.position + getRelativeTransform(dryer);
+        }
     }
 }

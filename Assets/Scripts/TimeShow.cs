@@ -25,20 +25,21 @@ public class TimeShow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("UIButtonToggleIconOff_Time") == null)
+        if (GameObject.Find("UIButtonToggleIconOff_Time") == null)
         {
-            if(timeValue == -1)
+            if (timeValue == -1)
             {
                 string text = GameObject.Find("SliderValueTime").GetComponent<TextMeshPro>().text;
                 textMesh.text = text;
                 timeValue = int.Parse(text.Split(':')[0]) * 60 + int.Parse(text.Split(':')[1]);
             }
-            if(timeValue == 0)
+            if (timeValue == 0)
             {
                 GameObject.Find("PressableButtonHoloLens2ToggleSwitch_32x96_Time").GetComponent<PhysicalPressEventRouter>().OnHandPressTriggered();
                 timeValue = -1;
+                GameObject.Find("WashingMachineWeightSensor").GetComponent<WashingMachineWeightScalerWidget>().moveClothes();
             }
-            if (i >= 1) 
+            if (i >= 1)
             {
                 timeValue -= 1;
                 int minute = timeValue / 60;
@@ -49,7 +50,7 @@ public class TimeShow : MonoBehaviour
                     textMesh.text = $"{minute}:{second}";
                 i = 0;
 
-            } 
+            }
             i += Time.deltaTime;
         }
     }
@@ -81,7 +82,7 @@ public class TimeShow : MonoBehaviour
 
     public void SetTime(string timeParam)
     {
-         textMesh.text = timeParam;
+        textMesh.text = timeParam;
 
     }
 

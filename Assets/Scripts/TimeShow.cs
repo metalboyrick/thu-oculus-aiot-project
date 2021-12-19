@@ -10,7 +10,7 @@ public class TimeShow : MonoBehaviour
     private bool timeStop = true;
     private TextMeshPro textMesh = null;
     float i = 0;
-    int timeValue = -1;
+    private int timeValue = -1;
 
     [SerializeField] private GameObject UIButtonToggleIconOn_Time;
     [SerializeField] private GameObject UIButtonToggleIconOff_Time;
@@ -27,7 +27,7 @@ public class TimeShow : MonoBehaviour
     {
         if(GameObject.Find("UIButtonToggleIconOff_Time") == null)
         {
-            if(timeValue == -1)
+            if (timeValue == -1)
             {
                 string text = GameObject.Find("SliderValueTime").GetComponent<TextMeshPro>().text;
                 textMesh.text = text;
@@ -35,8 +35,10 @@ public class TimeShow : MonoBehaviour
             }
             if(timeValue == 0)
             {
-                GameObject.Find("PressableButtonHoloLens2ToggleSwitch_32x96_Time").GetComponent<PhysicalPressEventRouter>().OnHandPressTriggered();
+                UIButtonToggleIconOff_Time.SetActive(true);
+                UIButtonToggleIconOn_Time.SetActive(false);
                 timeValue = -1;
+                textMesh.text = "00:00";
             }
             if (i >= 1) 
             {
@@ -56,7 +58,8 @@ public class TimeShow : MonoBehaviour
 
     public void StopMachine()
     {
-        GameObject.Find("PressableButtonHoloLens2ToggleSwitch_32x96_Time").GetComponent<PhysicalPressEventRouter>().OnHandPressTriggered();
+        UIButtonToggleIconOff_Time.SetActive(true);
+        UIButtonToggleIconOn_Time.SetActive(false);
         timeValue = -1;
         textMesh.text = "00:00";
     }

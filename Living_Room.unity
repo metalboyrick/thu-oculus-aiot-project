@@ -1710,7 +1710,7 @@ GameObject:
   - component: {fileID: 176471349}
   m_Layer: 0
   m_Name: HandMenu_Slider_Temp
-  m_TagString: Untagged
+  m_TagString: TempSlider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8080,6 +8080,19 @@ MonoBehaviour:
           m_StringArgument: Shoes
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2071384327}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PinchSlider,
+          Microsoft.MixedReality.Toolkit.SDK
+        m_MethodName: set_SliderValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1332035194
 Transform:
   m_ObjectHideFlags: 0
@@ -12587,7 +12600,7 @@ GameObject:
   - component: {fileID: 2071384328}
   m_Layer: 0
   m_Name: HandMenu_Slider_Time
-  m_TagString: Untagged
+  m_TagString: TimeSlider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19987,6 +20000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!4 &2296800504036604610
 Transform:
   m_ObjectHideFlags: 0
@@ -30279,6 +30294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!65 &7972511529878557661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37013,6 +37030,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
+  timeSlider: {fileID: 0}
+  tempSlider: {fileID: 0}
 --- !u!23 &8751396894295892141
 MeshRenderer:
   m_ObjectHideFlags: 0

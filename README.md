@@ -21,3 +21,17 @@ Unity version **2020.3.19f1**
 3. Replace the file `Living_Room.unity` at the root directory when you are done!
 4. Commit your files and git push, notify in WeChat group
 
+
+
+## Voice Commands
+
+| Command        | Feature                            |
+| -------------- | ---------------------------------- |
+| "Open"         | Open the washing machine           |
+| "Close"        | Close the washing machine          |
+| "Start"        | Start the machine                  |
+| "Stop"         | Stop the machine                   |
+| "Mode Regular" | Set the parameters to regular mode |
+| "Mode Jacket"  | Set the parameters to jacket mode  |
+| "Mode Shoes"   | Set the parameters to shoe mode    |
+

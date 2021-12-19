@@ -79,4 +79,10 @@ public class TimeShow : MonoBehaviour
         }
     }
 
+    public void SetTime(string timeParam)
+    {
+         textMesh.text = timeParam;
+
+    }
+
 }

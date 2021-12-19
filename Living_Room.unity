@@ -11108,6 +11108,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
+        m_MethodName: StopMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1875512289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28996,6 +29008,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1004576320}
         m_TargetAssemblyTypeName: TimeShow, Assembly-CSharp
+        m_MethodName: StartMachine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1779596997}
+        m_TargetAssemblyTypeName: WashMachineScript, Assembly-CSharp
         m_MethodName: StartMachine
         m_Mode: 1
         m_Arguments:

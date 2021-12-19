@@ -51,14 +51,8 @@ public class WashMachineScript : MonoBehaviour
     {
         isRunning = false;
     }   
-
-    public void SelectThis()
+    public void toggleSelected(bool newState)
     {
-        isSelected = true;
-    }
-
-    public void DeselectThis()
-    {
-        isSelected = false;
+        isSelected = newState;
     }
 }

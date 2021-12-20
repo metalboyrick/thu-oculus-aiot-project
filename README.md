@@ -12,6 +12,8 @@ Unity version **2020.3.19f1**
 3. Open Unity Hub, add the root directory
 4. Press play button when Unity is launched
 
+Notes when deploying to Oculus: under **File → Build Settings**, ensure that the scene **Living_Room** has a designated index of 0.
+
 
 
 ## Developing

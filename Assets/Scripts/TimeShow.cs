@@ -46,10 +46,7 @@ public class TimeShow : MonoBehaviour
                 timeValue -= 1;
                 int minute = timeValue / 60;
                 int second = timeValue % 60;
-                if (second < 10)
-                    textMesh.text = $"{minute}:0{second}";
-                else
-                    textMesh.text = $"{minute}:{second}";
+                textMesh.text = $"{minute:D2}:{second:D2}";
                 i = 0;
 
             }

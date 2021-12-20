@@ -55,12 +55,11 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
             if (textMesh != null)
             {
-                double minute = Math.Floor(90 * eventData.NewValue);
-                double second = 90 * eventData.NewValue - minute;
-                if (second * 60 < 10)
-                    textMesh.text = $"{minute:F0}:0{second * 60:F0}";
-                else
-                    textMesh.text = $"{minute:F0}:{second * 60:F0}";
+                // Maximum 90 minutes
+                int totalSeconds = (int)(90 * 60 * eventData.NewValue);
+                int minute = totalSeconds / 60;
+                int second = totalSeconds % 60;
+                textMesh.text = $"{minute:D2}:{second:D2}";
             }
         }
     }

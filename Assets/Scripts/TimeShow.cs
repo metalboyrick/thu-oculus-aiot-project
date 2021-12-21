@@ -4,13 +4,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TimeShow : MonoBehaviour
 {
     private bool timeStop = true;
     private TextMeshPro textMesh = null;
     float i = 0;
-    private int timeValue = -1;
+    public int timeValue = -1;
 
     [SerializeField] private GameObject UIButtonToggleIconOn_Time;
     [SerializeField] private GameObject UIButtonToggleIconOff_Time;
@@ -18,6 +19,9 @@ public class TimeShow : MonoBehaviour
     public AudioClip audioClip;
     public AudioClip audioClip_start;
     public AudioClip audioClip_pause;
+
+    
+    [SerializeField] private UnityEvent onStop;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +44,7 @@ public class TimeShow : MonoBehaviour
             }
             if (timeValue == 0)
             {
+                onStop.Invoke();
                 AudioSource.PlayClipAtPoint(audioClip, Vector3.zero);
                 UIButtonToggleIconOff_Time.SetActive(true);
                 UIButtonToggleIconOn_Time.SetActive(false);
@@ -62,6 +67,7 @@ public class TimeShow : MonoBehaviour
 
     public void StopMachine()
     {
+        onStop.Invoke();
         AudioSource.PlayClipAtPoint(audioClip, Vector3.zero);
         UIButtonToggleIconOff_Time.SetActive(true);
         UIButtonToggleIconOn_Time.SetActive(false);

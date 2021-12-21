@@ -15,6 +15,10 @@ public class TimeShow : MonoBehaviour
     [SerializeField] private GameObject UIButtonToggleIconOn_Time;
     [SerializeField] private GameObject UIButtonToggleIconOff_Time;
 
+    public AudioClip audioClip;
+    public AudioClip audioClip_start;
+    public AudioClip audioClip_pause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,12 +33,14 @@ public class TimeShow : MonoBehaviour
         {
             if (timeValue == -1)
             {
+                AudioSource.PlayClipAtPoint(audioClip_start, Vector3.zero);
                 string text = GameObject.Find("SliderValueTime").GetComponent<TextMeshPro>().text;
                 textMesh.text = text;
                 timeValue = int.Parse(text.Split(':')[0]) * 60 + int.Parse(text.Split(':')[1]);
             }
             if (timeValue == 0)
             {
+                AudioSource.PlayClipAtPoint(audioClip, Vector3.zero);
                 UIButtonToggleIconOff_Time.SetActive(true);
                 UIButtonToggleIconOn_Time.SetActive(false);
                 timeValue = -1;
@@ -56,6 +62,7 @@ public class TimeShow : MonoBehaviour
 
     public void StopMachine()
     {
+        AudioSource.PlayClipAtPoint(audioClip, Vector3.zero);
         UIButtonToggleIconOff_Time.SetActive(true);
         UIButtonToggleIconOn_Time.SetActive(false);
         timeValue = -1;
@@ -66,6 +73,7 @@ public class TimeShow : MonoBehaviour
     {
         if (UIButtonToggleIconOff_Time.activeSelf == true && UIButtonToggleIconOn_Time.activeSelf == false)
         {
+            AudioSource.PlayClipAtPoint(audioClip_start, Vector3.zero);
             UIButtonToggleIconOff_Time.SetActive(false);
             UIButtonToggleIconOn_Time.SetActive(true);
         }
@@ -75,6 +83,7 @@ public class TimeShow : MonoBehaviour
     {
         if (UIButtonToggleIconOff_Time.activeSelf == false && UIButtonToggleIconOn_Time.activeSelf == true)
         {
+            AudioSource.PlayClipAtPoint(audioClip_pause, Vector3.zero);
             UIButtonToggleIconOff_Time.SetActive(true);
             UIButtonToggleIconOn_Time.SetActive(false);
         }

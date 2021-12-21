@@ -9335,7 +9335,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087739255}
-  m_LocalRotation: {x: 0.10719051, y: 0.74382013, z: 0.09308017, w: 0.65312946}
+  m_LocalRotation: {x: 0.10719051, y: 0.7438201, z: 0.09308017, w: 0.6531294}
   m_LocalPosition: {x: 2.02084, y: 0.021558778, z: -0.34912562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17850,7 +17850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &228873479793858753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19792,22 +19792,22 @@ MonoBehaviour:
   - Target: {fileID: 7972511531387673665}
     Themes:
     - {fileID: 11400000, guid: 8f8cfb3041153fa45bccb6d664a563ec, type: 2}
-  - Target: {fileID: 0}
+  - Target: {fileID: 7972511529878557633}
     Themes:
     - {fileID: 11400000, guid: 087b16002c2b0b445baa3ed3beae44a9, type: 2}
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ToggleProfiler
-        m_Mode: 1
+      - m_Target: {fileID: 7972511529878557634}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnChangeMode
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Regular
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -24060,7 +24060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7428741877263625685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.042269476, y: -0.04771684, z: -0.97776914}
+  m_LocalPosition: {x: 0.1, y: -0.04771684, z: -0.97776914}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7972511531505423648}
@@ -24362,7 +24362,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Shoe
+          m_StringArgument: Shoes
           m_BoolArgument: 0
         m_CallState: 2
   ButtonReleased:
@@ -24392,7 +24392,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8751396893859901236}
+      - m_Target: {fileID: 2296800503669100986}
         m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
         m_MethodName: OnChangeMode
         m_Mode: 5
@@ -24438,22 +24438,22 @@ MonoBehaviour:
   - Target: {fileID: 8751396894295892146}
     Themes:
     - {fileID: 11400000, guid: 8f8cfb3041153fa45bccb6d664a563ec, type: 2}
-  - Target: {fileID: 0}
+  - Target: {fileID: 8751396893859901234}
     Themes:
     - {fileID: 11400000, guid: 087b16002c2b0b445baa3ed3beae44a9, type: 2}
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnToggleHandMesh
-        m_Mode: 1
+      - m_Target: {fileID: 8751396893859901236}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnChangeMode
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Jacket
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -24825,8 +24825,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
-  timeSlider: {fileID: 0}
-  tempSlider: {fileID: 0}
+  timeSlider: {fileID: 2071384324}
+  tempSlider: {fileID: 176471347}
 --- !u!4 &2296800504036604610
 Transform:
   m_ObjectHideFlags: 0
@@ -27919,7 +27919,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4693015545117230110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28559,7 +28559,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4693015545814842420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28758,7 +28758,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4693015546079570404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29198,7 +29198,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4693015547007324622}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34571,7 +34571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7909109741200961640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35005,7 +35005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &7933940505627761576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35177,8 +35177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
-  timeSlider: {fileID: 0}
-  tempSlider: {fileID: 0}
+  timeSlider: {fileID: 2071384324}
+  tempSlider: {fileID: 176471347}
 --- !u!65 &7972511529878557661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40932,22 +40932,22 @@ MonoBehaviour:
   - Target: {fileID: 2296800505112682040}
     Themes:
     - {fileID: 11400000, guid: 8f8cfb3041153fa45bccb6d664a563ec, type: 2}
-  - Target: {fileID: 0}
+  - Target: {fileID: 2296800503669100984}
     Themes:
     - {fileID: 11400000, guid: 087b16002c2b0b445baa3ed3beae44a9, type: 2}
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnToggleHandJoint
-        m_Mode: 1
+      - m_Target: {fileID: 2296800503669100986}
+        m_TargetAssemblyTypeName: ButtonToggleModeScript, Assembly-CSharp
+        m_MethodName: OnChangeMode
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Shoe
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -41749,8 +41749,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2335030512171195305}
-  timeSlider: {fileID: 0}
-  tempSlider: {fileID: 0}
+  timeSlider: {fileID: 2071384324}
+  tempSlider: {fileID: 176471347}
 --- !u!23 &8751396894295892141
 MeshRenderer:
   m_ObjectHideFlags: 0

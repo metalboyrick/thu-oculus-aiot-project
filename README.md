@@ -1,5 +1,9 @@
 # thu-oculus-aiot-project
 
+AIoT washing/drying machine demonstration in VR.
+
+Visit [the release page](https://github.com/metalboyrick/thu-oculus-aiot-project/releases/tag/artefacts) for a pre-built APK and a video demonstration.
+
 ## Unity version
 Unity version **2020.3.19f1**
 
